@@ -1,10 +1,10 @@
-package com.test.utils;
+package cases;
 
-
+import com.test.utils.OkHttpUtils;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class StartTest {
+public class GxGzTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"广州", "深圳", "佛山", "湛江", "茂名", "清远"})
