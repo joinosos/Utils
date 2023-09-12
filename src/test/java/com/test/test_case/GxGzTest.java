@@ -2,12 +2,15 @@ package com.test.test_case;
 
 import com.dome.OkHttpUtils;
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-
+@Epic("Allure GxGzTest")
+@Feature("Junit 5 support")
 public class GxGzTest {
 
 

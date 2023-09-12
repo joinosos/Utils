@@ -17,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <aspectj.version>1.8.10</aspectj.version>
         <allure.version>2.24.0</allure.version>
         <allure.maven.version>2.12.0</allure.maven.version>
     </properties>
@@ -77,6 +78,14 @@
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                     <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
                 </configuration>
             </plugin>
         </plugins>
